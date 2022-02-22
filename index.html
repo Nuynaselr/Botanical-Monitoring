@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    
+    <link rel="icon" href="source/icon/cactus_title.png" type="image/icon type">
+    <title>Botanical Monitoring</title>
+</head>
+<body>
+    <div class="main_div">
+        <div class="obj_model" >
+            <model-viewer src="source/obj/cactus.glb" alt="Cactus" auto-rotate camera-controls ar ios-src="source/obj/cactus.glb"></model-viewer>
+        </div>
+
+        <div class="div_autorization">
+            <form class="form_autorization" name="form_autorization" method="post" action="">
+            <label class="label_autorization">Login<br>
+                <input class="input_autorization" type="text" size="40">
+            </label>
+            <label class="label_autorization">Password<br>
+                <input class="input_autorization"type="password" size="40">
+            </label>
+            <button id="button" class="button_autorization">Log In</button>
+        </div>
+    </div>
+    
+</body>
+</html>
